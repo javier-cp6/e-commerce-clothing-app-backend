@@ -1,0 +1,21 @@
+{
+  "name": "clothing_app",
+  "version": "1.0.0",
+  "description": "\"Backend for clothing app\"",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "dotenv -e .env -- nodemon ./src/server.js"
+  },
+  "author": "jcp",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "prisma": "^4.1.1"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^6.0.0",
+    "nodemon": "^2.0.19"
+  }
+}
