@@ -6,11 +6,15 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "dotenv -e .env -- nodemon ./src/server.js"
+    "start:dev": "dotenv -e .env -- nodemon ./src/server.js",
+    "migrate:migration": "npx prisma migrate dev",
+    "create:migration": "npx prisma migrate dev --preview-feature --create-only",
+    "deploy:migration": "npx prisma migrate deploy"
   },
   "author": "jcp",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^4.1.1",
     "express": "^4.18.1",
     "prisma": "^4.1.1"
   },

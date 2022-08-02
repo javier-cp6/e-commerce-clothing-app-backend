@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  cat_id   Int       @id @unique @default(autoincrement())
+  cat_name String    @db.VarChar(45)
+  cat_desc String    @db.VarChar(100)
+  cat_img  String    @db.Text
+  products Product[]
+
+  @@map("categories")
+}
+
+model Product {
+  prod_id       Int           @id @unique @default(autoincrement())
+  prod_name     String        @db.VarChar(100)
+  prod_type     PRODUCT_TYPE  @default(MEN)
+  prod_size     Json
+  prod_color    Json
+  prod_price    Decimal       @db.Decimal(10, 2)
+  prod_topic    PRODUCT_TOPIC @default(URBAN)
+  prod_designer String        @db.VarChar(45)
+  prod_img      String        @db.Text
+  categoryId    Int
+  category      Category      @relation(fields: [categoryId], references: [cat_id])
+
+  @@map("products")
+}
+
+enum PRODUCT_TYPE {
+  MEN
+  WOMEN
+  KIDS
+}
+
+enum PRODUCT_TOPIC {
+  MUSIC
+  SPORTS
+  URBAN
+}
