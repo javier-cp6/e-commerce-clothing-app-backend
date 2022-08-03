@@ -1,5 +1,11 @@
 import { Router } from "express";
-import { getCategories, postCategory } from "../controllers/categories.controllers.js";
+import { 
+  getCategories, 
+  postCategory, 
+  updateCategory,
+  deleteCategory,
+  getCategoryById
+} from "../controllers/categories.controllers.js";
 
 export const categoriesRouter = Router()
 
@@ -8,3 +14,8 @@ categoriesRouter
   .get(getCategories)
   .post(postCategory)
 
+categoriesRouter
+  .route("/categories/:id")
+  .put(updateCategory)
+  .delete(deleteCategory)
+  .get(getCategoryById)

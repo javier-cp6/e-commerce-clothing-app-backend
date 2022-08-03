@@ -1,16 +1,22 @@
-import { categoryRequestDTO } from "../dtos/categories.dtos.js";
 import { PrismaConnector } from "../prisma.js";
+import { categoryRequestDTO } from "../dtos/categories.dtos.js";
 
 export const getCategories = async (req, res)=> {
   try {
-    const categories = await PrismaConnector.category.findMany();
-    return res.json({
-      message: null,
-      result: categories
-    })
+    const categories = await PrismaConnector.category.findMany({
+      include: {
+        products: true,
+      }
+    });
+    // const categories = await PrismaConnector.category.findMany();
+    // return res.json({
+    //   message: null,
+    //   result: categories
+    // })
+    return res.json(categories)
   } catch (error) {
-    return res.json({
-      message: 'Something went wrong',
+    return res.status(400).json({
+      message: 'Something went wrong while getting categories',
       result: error.message
     })
   }
@@ -28,6 +34,62 @@ export const postCategory = async (req, res) => {
     return res.status(400).json({
       message: "Something went wrong while creating category",
       result: error.message
+    })
+  }
+}
+
+export const updateCategory = async (req, res) => {
+  try {
+    const {id} = req.params;
+    const data = categoryRequestDTO(req.body);
+    const result = await PrismaConnector.category.update({
+      data,
+      where: {cat_id: +id},
+    })
+    return res.json({
+      message: "Category updated successfully",
+      result
+    })
+  } catch (error) {
+    return res.status(400).json({
+      message: "Something went wrong while updating category",
+      result: error.message
+    })
+  }
+}
+
+export const deleteCategory = async (req, res) => {
+  try {
+    const {id} = req.params;
+    const result = await PrismaConnector.category.delete({
+      where: {cat_id: +id}
+    })
+    return res.json({
+      message: "Category deleted successfully",
+      result,
+    })
+  } catch (error) {
+    return res.status(400).json({
+      message: "Something went wrong while deleting category",
+      result: error.message
+    })
+  }
+}
+
+export const getCategoryById = async (req, res) => {
+  try {
+    const {id} = req.params;
+    const result = await PrismaConnector.category.findFirstOrThrow({
+      where: {cat_id: +id},
+      include: {
+        products: true
+      }
+    })
+    return res.json(result)
+  } catch (error) {
+    return res.status(400).json({
+      message: "Something went wrong while getting category",
+      result: error.message,
     })
   }
 }

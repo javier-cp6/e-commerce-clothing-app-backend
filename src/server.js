@@ -1,6 +1,7 @@
 import express from 'express';
 import { PrismaConnector } from "./prisma.js"
 import { categoriesRouter } from './routes/categories.routes.js';
+import { productsRouter } from './routes/products.routes.js';
 
 const app = express();
 const PORT = process.env.PORT;
@@ -24,6 +25,7 @@ app.use(express.json());
 // })
 
 app.use(categoriesRouter)
+app.use(productsRouter)
 
 app.listen(PORT, ()=> {
   console.log(`Server running on port ${PORT}`);
