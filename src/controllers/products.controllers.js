@@ -32,3 +32,33 @@ export const postProduct = async (req, res) => {
     })
   }
 }
+
+export const updateProduct = async (req, res) => {
+  try {
+    const {catId, prodId} = req.params;
+    const data = productRequestDTO(req.body);
+    const product = await PrismaConnector.product.findFirstOrThrow({
+      where: { prod_id: +prodId }
+    })
+    if(product.categoryId === +catId) {
+      const result = await PrismaConnector.product.update({
+        data,
+        where: {
+          prod_id: +prodId,
+          }
+      })
+      return res.json({
+        message: "Product updated successfully",
+        result,
+      })
+    } else {
+      throw new Error("categoryId didn't match product")
+    }
+    
+  } catch (error) {
+    return res.status(400).json({
+      message: "Something went wrong while updating product",
+      result: error.message
+    })
+  }
+}
