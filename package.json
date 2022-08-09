@@ -9,7 +9,8 @@
     "start:dev": "dotenv -e .env -- nodemon ./src/server.js",
     "migrate:migration": "npx prisma migrate dev",
     "create:migration": "npx prisma migrate dev --preview-feature --create-only",
-    "deploy:migration": "npx prisma migrate deploy"
+    "deploy:migration": "npx prisma migrate deploy",
+    "start": "node ./src/server.js"
   },
   "author": "jcp",
   "license": "ISC",
