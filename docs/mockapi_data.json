@@ -1,0 +1,236 @@
+[
+  {
+   "cat_name": "T-Shirts",
+   "cat_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+   "cat_img": "https://images.unsplash.com/photo-1621951753163-ee63e7fc147e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+   "cat_id": "1",
+   "products": [
+    {
+     "prod_type": "prod_type 1",
+     "prod_name": "prod_name 1",
+     "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ],
+     "prod_color": [
+      "black",
+      "white",
+      "red",
+      "grey"
+     ],
+     "prod_price": 79,
+     "prod_topic": "prod_topic 1",
+     "prod_designer": "Sage",
+     "prod_img": "https://images.unsplash.com/photo-1523585298601-d46ae038d7d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+     "prod_id": "1",
+     "categoryId": "1"
+    },
+    {
+     "prod_type": "prod_type 5",
+     "prod_name": "prod_name 5",
+     "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ],
+     "prod_color": [
+      "black",
+      "white",
+      "red",
+      "grey"
+     ],
+     "prod_price": 68,
+     "prod_topic": "prod_topic 5",
+     "prod_designer": "Wilson",
+     "prod_img": "http://loremflickr.com/640/480/fashion",
+     "prod_id": "5",
+     "categoryId": "1"
+    },
+    {
+     "prod_type": "prod_type 9",
+     "prod_name": "prod_name 9",
+     "prod_size": [],
+     "prod_color": [],
+     "prod_price": 28,
+     "prod_topic": "prod_topic 9",
+     "prod_designer": "Jessyca",
+     "prod_img": "http://loremflickr.com/640/480/fashion",
+     "prod_id": "9",
+     "categoryId": "1"
+    }
+   ],
+   "prod_type": "prod_type 5",
+   "prod_name": "prod_name 5 qwertyu",
+   "prod_size": [
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "prod_color": [
+    "black",
+    "white",
+    "red",
+    "grey"
+   ],
+   "prod_price": 68,
+   "prod_topic": "prod_topic 5",
+   "prod_designer": "Wilson",
+   "prod_img": "http://loremflickr.com/640/480/fashion",
+   "prod_id": "5",
+   "categoryId": "1"
+  },
+  {
+   "cat_name": "Long Sleeve shirts",
+   "cat_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+   "cat_img": "https://images.unsplash.com/photo-1618354691551-44de113f0164?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1430&q=80",
+   "cat_id": "2",
+   "products": [
+    {
+     "prod_type": "prod_type 2",
+     "prod_name": "prod_name 2",
+     "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ],
+     "prod_color": [
+      "black",
+      "white",
+      "red",
+      "grey"
+     ],
+     "prod_price": 60,
+     "prod_topic": "prod_topic 2",
+     "prod_designer": "Sylvia",
+     "prod_img": "http://loremflickr.com/640/480/fashion",
+     "prod_id": "2",
+     "categoryId": "2"
+    },
+    {
+     "prod_type": "prod_type 6",
+     "prod_name": "prod_name 6",
+     "prod_size": [],
+     "prod_color": [],
+     "prod_price": 13,
+     "prod_topic": "prod_topic 6",
+     "prod_designer": "Misty",
+     "prod_img": "http://loremflickr.com/640/480/fashion",
+     "prod_id": "6",
+     "categoryId": "2"
+    },
+    {
+     "prod_type": "prod_type 10",
+     "prod_name": "prod_name 10",
+     "prod_size": [],
+     "prod_color": [],
+     "prod_price": 65,
+     "prod_topic": "prod_topic 10",
+     "prod_designer": "Lorena",
+     "prod_img": "http://loremflickr.com/640/480/fashion",
+     "prod_id": "10",
+     "categoryId": "2"
+    }
+   ]
+  },
+  {
+   "cat_name": "3/4 Sleeve shirts",
+   "cat_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+   "cat_img": "https://images.unsplash.com/photo-1641278859016-194b40d7230c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+   "cat_id": "3",
+   "products": [
+    {
+     "prod_type": "prod_type 3",
+     "prod_name": "prod_name 3",
+     "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ],
+     "prod_color": [
+      "black",
+      "white",
+      "red",
+      "grey"
+     ],
+     "prod_price": 55,
+     "prod_topic": "prod_topic 3",
+     "prod_designer": "Jaylen",
+     "prod_img": "http://loremflickr.com/640/480/fashion",
+     "prod_id": "3",
+     "categoryId": "3"
+    },
+    {
+     "prod_type": "prod_type 7",
+     "prod_name": "prod_name 7",
+     "prod_size": [],
+     "prod_color": [],
+     "prod_price": 40,
+     "prod_topic": "prod_topic 7",
+     "prod_designer": "Aleen",
+     "prod_img": "http://loremflickr.com/640/480/fashion",
+     "prod_id": "7",
+     "categoryId": "3"
+    },
+    {
+     "prod_type": "prod_type 11",
+     "prod_name": "prod_name 11",
+     "prod_size": [],
+     "prod_color": [],
+     "prod_price": 76,
+     "prod_topic": "prod_topic 11",
+     "prod_designer": "Presley",
+     "prod_img": "http://loremflickr.com/640/480/fashion",
+     "prod_id": "11",
+     "categoryId": "3"
+    }
+   ]
+  },
+  {
+   "cat_name": "Tank tops",
+   "cat_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+   "cat_img": "https://images.unsplash.com/photo-1635863771008-704e511bde79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+   "cat_id": "4",
+   "products": [
+    {
+     "prod_type": "prod_type 4",
+     "prod_name": "prod_name 4",
+     "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+     ],
+     "prod_color": [
+      "black",
+      "white",
+      "red",
+      "grey"
+     ],
+     "prod_price": 14,
+     "prod_topic": "prod_topic 4",
+     "prod_designer": "Cameron",
+     "prod_img": "http://loremflickr.com/640/480/fashion",
+     "prod_id": "4",
+     "categoryId": "4"
+    },
+    {
+     "prod_type": "prod_type 8",
+     "prod_name": "prod_name 8",
+     "prod_size": [],
+     "prod_color": [],
+     "prod_price": 55,
+     "prod_topic": "prod_topic 8",
+     "prod_designer": "Wilford",
+     "prod_img": "http://loremflickr.com/640/480/fashion",
+     "prod_id": "8",
+     "categoryId": "4"
+    }
+   ]
+  }
+ ]

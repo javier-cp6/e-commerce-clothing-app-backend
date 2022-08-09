@@ -2,8 +2,11 @@ import { Router } from "express";
 import { 
   getProducts, 
   postProduct,
-  updateProduct 
+  updateProduct,
+  deleteProduct,
+  getProductById 
 } from "../controllers/products.controllers.js";
+import { validateCategoryId } from "../validators.js";
 
 export const productsRouter = Router()
 
@@ -14,4 +17,6 @@ productsRouter
 
 productsRouter
   .route("/categories/:catId/products/:prodId")
-  .put(updateProduct)
+  .put(validateCategoryId, updateProduct)
+  .delete(validateCategoryId, deleteProduct)
+  .get(validateCategoryId, getProductById)

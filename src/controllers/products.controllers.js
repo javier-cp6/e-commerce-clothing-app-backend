@@ -35,30 +35,60 @@ export const postProduct = async (req, res) => {
 
 export const updateProduct = async (req, res) => {
   try {
-    const {catId, prodId} = req.params;
+    const {prodId} = req.params;
     const data = productRequestDTO(req.body);
-    const product = await PrismaConnector.product.findFirstOrThrow({
-      where: { prod_id: +prodId }
+    const result = await PrismaConnector.product.update({
+      data,
+      where: {
+        prod_id: +prodId,
+        }
     })
-    if(product.categoryId === +catId) {
-      const result = await PrismaConnector.product.update({
-        data,
-        where: {
-          prod_id: +prodId,
-          }
-      })
-      return res.json({
-        message: "Product updated successfully",
-        result,
-      })
-    } else {
-      throw new Error("categoryId didn't match product")
-    }
-    
+    return res.json({
+      message: "Product updated successfully",
+      result,
+    })
   } catch (error) {
     return res.status(400).json({
       message: "Something went wrong while updating product",
       result: error.message
     })
+  }
+}
+
+export const deleteProduct = async (req, res) => {
+  try {
+    const {prodId} = req.params
+    const result = await PrismaConnector.product.delete({
+      where: {
+        prod_id: +prodId
+      }
+    })  
+    return res.json({
+      message: "Product deleted succesfully",
+      result
+    })
+  } catch (error) {
+    return res.status(401).json({
+      message: "Something went wrong while deleting product",
+      result: error.message
+    })
+  }
+}
+
+export const getProductById = async (req, res) => {
+  try {
+    const {prodId} = req.params
+    const result = await PrismaConnector.product.findFirstOrThrow({
+      where: {
+        prod_id: +prodId
+      }
+    })
+    return res.json(result)
+  } catch (error) {
+    return res.status(400).json({
+      messag: "Something went wrong while getting product",
+      result: error.message
+    })
+    
   }
 }
