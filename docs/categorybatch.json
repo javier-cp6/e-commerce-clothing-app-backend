@@ -1,0 +1,17 @@
+[
+  {
+    "cat_name": "T-ShirtsTEST1",
+    "cat_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "cat_img":  "https://images.unsplash.com/photo-1621951753163-ee63e7fc147e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+  },
+  {
+    "cat_name": "T-ShirtsTEST2",
+    "cat_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "cat_img":  "https://images.unsplash.com/photo-1621951753163-ee63e7fc147e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+  },
+  {
+    "cat_name": "T-ShirtsTEST3",
+    "cat_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "cat_img":  "https://images.unsplash.com/photo-1621951753163-ee63e7fc147e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+  }
+]

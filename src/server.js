@@ -1,10 +1,19 @@
 import express from 'express';
+import cors from "cors";
 import { PrismaConnector } from "./prisma.js"
 import { categoriesRouter } from './routes/categories.routes.js';
 import { productsRouter } from './routes/products.routes.js';
 
 const app = express();
 const PORT = process.env.PORT;
+
+app.use(
+  cors({
+    origin: [process.env.APP_URL, process.env.ADMIN_APP_URL],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["accept", "authorization", "content-type"]
+  })
+)
 
 app.use(express.json());
 

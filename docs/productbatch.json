@@ -1,0 +1,467 @@
+[
+  {
+    "prod_type": "WOMEN",
+    "prod_name": "T-shirt Lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 68,
+    "prod_topic": "MUSIC",
+    "prod_designer": "Wilson",
+    "prod_img": "https://images.unsplash.com/photo-1519722417352-7d6959729417?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "categoryId": 1
+  },
+  {
+    "prod_type": "WOMEN",
+    "prod_name": "T-shirt Lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 73,
+    "prod_topic": "SPORTS",
+    "prod_designer": "Lorem ipsum",
+    "prod_img": "https://images.unsplash.com/photo-1456885284447-7dd4bb8720bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "categoryId": 1
+  },
+  {
+    "prod_type": "WOMEN",
+    "prod_name": "T-shirt Lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 85,
+    "prod_topic": "MUSIC",
+    "prod_designer": "Lorem ipsum",
+    "prod_img": "https://images.unsplash.com/photo-1509338312384-fa7bfdf12cd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "categoryId": 1
+  },
+  {
+    "prod_type": "MEN",
+    "prod_name": "T-shirt Lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 52,
+    "prod_topic": "URBAN",
+    "prod_designer": "Lorem ipsum",
+    "prod_img": "https://images.unsplash.com/photo-1523585298601-d46ae038d7d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+    "categoryId": 1
+  },
+  {
+    "prod_type": "MEN",
+    "prod_name": "T-shirt Lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 42,
+    "prod_topic": "URBAN",
+    "prod_designer": "Sylvia",
+    "prod_img": "https://images.unsplash.com/photo-1618354691438-25bc04584c23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80",
+    "categoryId": 1
+  },
+  {
+    "prod_type": "MEN",
+    "prod_name": "T-shirt Lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 95,
+    "prod_topic": "MUSIC",
+    "prod_designer": "Wilson",
+    "prod_img": "https://images.unsplash.com/photo-1590999659195-e64a988eaf4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "categoryId": 1
+  },
+  {
+    "prod_type": "MEN",
+    "prod_name": "T-shirt Lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 65,
+    "prod_topic": "URBAN",
+    "prod_designer": "Sage",
+    "prod_img": "https://images.unsplash.com/photo-1594895418704-a96a9609aba4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    "categoryId": 1
+  },
+  {
+    "prod_type": "MEN",
+    "prod_name": "nuevo",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 4452,
+    "prod_topic": "URBAN",
+    "prod_designer": "Citlalli",
+    "prod_img": "https://firebasestorage.googleapis.com/v0/b/cod-dfw-customclothing-app.appspot.com/o/prodPics%2Fc81510ba-25d5-47cc-a056-5263527b213b.webp?alt=media&token=95d532b1-6e18-402f-833a-a418e2e27a46",
+    "categoryId": 1
+  },
+
+  {
+    "prod_type": "WOMEN",
+    "prod_name": "Long Sleeve shirt lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 60,
+    "prod_topic": "URBAN",
+    "prod_designer": "Sylvia",
+    "prod_img": "https://images.unsplash.com/photo-1616662457559-4921cd1bde81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "categoryId": 2
+  },
+  {
+    "prod_type": "WOMEN",
+    "prod_name": "Long Sleeve shirt lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 35,
+    "prod_topic": "MUSIC",
+    "prod_designer": "Wilson",
+    "prod_img": "https://images.unsplash.com/photo-1584110426067-6c1615e60e9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "categoryId": 2
+  },
+  {
+    "prod_type": "WOMEN",
+    "prod_name": "Long Sleeve shirt lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 65,
+    "prod_topic": "URBAN",
+    "prod_designer": "Lorem ipsum",
+    "prod_img": "https://images.unsplash.com/photo-1582551272941-9fc3e8db8bd5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    "categoryId": 2
+  },
+  {
+    "prod_type": "MEN",
+    "prod_name": "Long Sleeve shirt lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 46,
+    "prod_topic": "MUSIC",
+    "prod_designer": "Bezos",
+    "prod_img": "https://images.unsplash.com/photo-1572080404736-d9fa92b5f970?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "categoryId": 2
+  },
+  {
+    "prod_type": "MEN",
+    "prod_name": "Long Sleeve shirt lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 63,
+    "prod_topic": "MUSIC",
+    "prod_designer": "Orson",
+    "prod_img": "https://images.unsplash.com/photo-1608753088972-14d0514ac678?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=350&q=80",
+    "categoryId": 2
+  },
+  {
+    "prod_type": "MEN",
+    "prod_name": "Long Sleeve shirt lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 35,
+    "prod_topic": "MUSIC",
+    "prod_designer": "Kim",
+    "prod_img": "https://images.unsplash.com/photo-1602714007833-58fc14b465e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80",
+    "categoryId": 2
+  },
+
+  {
+    "prod_type": "WOMEN",
+    "prod_name": "3/4 Sleeve shirt lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 79,
+    "prod_topic": "URBAN",
+    "prod_designer": "Sage",
+    "prod_img": "https://images.unsplash.com/photo-1527181467037-80564ba4ac51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    "categoryId": 3
+  },
+  {
+    "prod_type": "MEN",
+    "prod_name": "3/4 Sleeve shirt lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 25,
+    "prod_topic": "MUSIC",
+    "prod_designer": "Lorem ipsum",
+    "prod_img": "https://images.unsplash.com/photo-1522099556433-a5f8ac730391?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "categoryId": 3
+  },
+  {
+    "prod_type": "MEN",
+    "prod_name": "3/4 Sleeve shirt lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 68,
+    "prod_topic": "SPORTS",
+    "prod_designer": "Sage",
+    "prod_img": "https://images.unsplash.com/photo-1598939897089-f73043763e22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80",
+    "categoryId": 3
+  },
+  {
+    "prod_type": "MEN",
+    "prod_name": "3/4 Sleeve shirt lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 84,
+    "prod_topic": "MUSIC",
+    "prod_designer": "Sage",
+    "prod_img": "https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+    "categoryId": 3
+  },
+
+  {
+    "prod_type": "WOMEN",
+    "prod_name": "Tank Top lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 35,
+    "prod_topic": "MUSIC",
+    "prod_designer": "Cameron",
+    "prod_img": "https://images.unsplash.com/photo-1548389995-fbd3151a501f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "categoryId": 4
+  },
+  {
+    "prod_type": "WOMEN",
+    "prod_name": "Tank Top lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 25,
+    "prod_topic": "URBAN",
+    "prod_designer": "Mowgli",
+    "prod_img": "https://images.unsplash.com/photo-1575515435364-0cb5fd2963e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "categoryId": 4
+  },
+  {
+    "prod_type": "MEN",
+    "prod_name": "Tank Top lorem ipsum dolor sit amet, consectetur",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 15,
+    "prod_topic": "MUSIC",
+    "prod_designer": "Saul",
+    "prod_img": "https://images.unsplash.com/photo-1571666274590-f8cc87006500?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "categoryId": 4
+  },
+  {
+    "prod_type": "MEN",
+    "prod_name": "Test",
+    "prod_size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "prod_color": [
+      "BLACK",
+      "WHITE",
+      "RED",
+      "GREY"
+    ],
+    "prod_price": 100,
+    "prod_topic": "URBAN",
+    "prod_designer": "BCS",
+    "prod_img": "https://firebasestorage.googleapis.com/v0/b/cod-dfw-customclothing-app.appspot.com/o/prodPics%2Fd322dd6c-2331-45d5-bf36-c05d97568715.webp?alt=media&token=49ab5f6a-3c79-4283-a951-f5b0e1021648",
+    "categoryId": 4
+  }
+]
