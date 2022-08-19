@@ -32,8 +32,68 @@ model Product {
   prod_img      String        @db.Text
   categoryId    Int
   category      Category      @relation(fields: [categoryId], references: [cat_id])
+  cartItems     CartItem[]
 
   @@map("products")
+}
+
+model User {
+  id          Int       @id @unique @default(autoincrement())
+  name        String    @db.VarChar(45)
+  lastname    String    @db.VarChar(45)
+  email       String    @unique @db.VarChar(45)
+  password    String    @db.Text
+  phone       String?   @db.VarChar(45)
+  birthdate   DateTime? @db.Date
+  nationality String    @db.VarChar(45)
+  validated   Boolean   @default(false)
+  addresses   Address[]
+  carts       Cart[]
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  @@map("users")
+}
+
+model Address {
+  id         Int     @id @unique @default(autoincrement())
+  country    String  @db.VarChar(45)
+  address    String  @db.VarChar(100)
+  reference  String? @db.VarChar(100)
+  city       String  @db.VarChar(45)
+  province   String  @db.VarChar(45)
+  postalcode String  @db.VarChar(45)
+  userId     Int
+  user       User    @relation(fields: [userId], references: [id])
+
+  @@map("addresses")
+}
+
+model Cart {
+  id        Int         @id @unique @default(autoincrement())
+  status    CART_STATUS @default(OPEN)
+  userId    Int
+  user      User        @relation(fields: [userId], references: [id])
+  cartItems CartItem[]
+  createdAt DateTime    @default(now()) @map("created_at")
+  updatedAt DateTime    @updatedAt @map("updated_at")
+
+  @@map("carts")
+}
+
+model CartItem {
+  id        Int             @id @unique @default(autoincrement())
+  quantity  Int
+  size      CART_ITEM_SIZE  @default(M)
+  color     CART_ITEM_COLOR @default(BLACK)
+  cartId    Int
+  cart      Cart            @relation(fields: [cartId], references: [id])
+  productId Int
+  product   Product         @relation(fields: [productId], references: [prod_id])
+  createdAt DateTime        @default(now()) @map("created_at")
+  updatedAt DateTime        @updatedAt @map("updated_at")
+
+  @@map("cartItems")
 }
 
 enum PRODUCT_TYPE {
@@ -46,4 +106,24 @@ enum PRODUCT_TOPIC {
   MUSIC
   SPORTS
   URBAN
+}
+
+enum CART_STATUS {
+  OPEN
+  PENDING
+  CLOSE
+}
+
+enum CART_ITEM_COLOR {
+  BLACK
+  WHITE
+  RED
+  GREY
+}
+
+enum CART_ITEM_SIZE {
+  S
+  M
+  L
+  XL
 }
