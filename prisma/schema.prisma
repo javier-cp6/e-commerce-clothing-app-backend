@@ -51,6 +51,7 @@ model User {
   carts       Cart[]
   createdAt   DateTime  @default(now()) @map("created_at")
   updatedAt   DateTime  @updatedAt @map("updated_at")
+  orders      Order[]
 
   @@map("users")
 }
@@ -96,6 +97,20 @@ model CartItem {
   @@map("cartItems")
 }
 
+model Order {
+  id                Int          @id @unique @default(autoincrement())
+  total             Decimal      @db.Decimal(10, 2)
+  status            ORDER_STATUS
+  mpPreferenceId    String       @db.Text
+  mpMerchantOrderId String?      @db.Text
+  userId            Int
+  user              User         @relation(fields: [userId], references: [id])
+  createdAt         DateTime     @default(now()) @map("created_at")
+  updatedAt         DateTime     @updatedAt @map("updated_at")
+
+  @@map("orders")
+}
+
 enum PRODUCT_TYPE {
   MEN
   WOMEN
@@ -126,4 +141,11 @@ enum CART_ITEM_SIZE {
   M
   L
   XL
+}
+
+enum ORDER_STATUS {
+  CREATED
+  PAID
+  FAILED
+  PENDING
 }
