@@ -8,11 +8,6 @@ export const getCategories = async (req, res)=> {
         products: true,
       }
     });
-    // const categories = await PrismaConnector.category.findMany();
-    // return res.json({
-    //   message: null,
-    //   result: categories
-    // })
     return res.json(categories)
   } catch (error) {
     return res.status(400).json({

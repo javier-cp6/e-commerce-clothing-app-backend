@@ -36,7 +36,7 @@ export const postUser = async (req, res) => {
 
     const result = await PrismaConnector.user.create({ 
       data: { ...data, password: encryptedPassword }
-     })
+    })
 
     const currentDate = new Date();
 

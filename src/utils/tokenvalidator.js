@@ -16,12 +16,15 @@ export const validateToken = async (req, res, next) => {
     }
 
     const payload = jwt.verify(token, process.env.JWT_KEY);
-    console.log(payload);
+    // console.log(payload);
 
     const user = await PrismaConnector.user.findUniqueOrThrow({
       where: {
         id: payload.id,
       },
+      include: {
+        carts: true,
+      }
     });
 
     req.user = user;
