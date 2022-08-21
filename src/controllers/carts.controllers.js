@@ -52,3 +52,58 @@ export const getItems = async (req, res) => {
     });
   }
 };
+
+export const updateItem = async (req, res) => {
+  try {
+    const data = cartRequestDTO(req.body);
+
+    const { user }  = req;
+    const {itemId} = req.params
+
+    const cart = await PrismaConnector.cart.findFirstOrThrow({
+      where: {userId: +user.id},
+      include: {
+        cartItems: true
+      }
+    })
+
+    const cartItem = await PrismaConnector.cartItem.update({
+      data: {...data, cartId: cart.id},
+      where: {
+        id: +itemId,
+        }
+    })
+    return res.json({
+        message: "Item updated successfully",
+        content: cartItem,
+      });
+
+  } catch (error) {
+    return res.status(400).json({
+      message: error.message,
+      result: null,
+    });
+  }
+};
+
+export const deleteItem = async (req, res) => {
+  try {
+    const {itemId} = req.params
+    
+    const result = await PrismaConnector.cartItem.delete({
+      where: {
+        id: +itemId
+      }
+    })  
+    return res.json({
+      message: "Item deleted succesfully",
+      result
+    })
+    
+  } catch (error) {
+    return res.status(401).json({
+      message: "Something went wrong while deleting item",
+      result: error.message
+    })
+  }
+}
