@@ -77,7 +77,7 @@ export const placeOrder = async (req, res) => {
     })
 
     return res.json({
-      message: "Order placed sucessfully. Payment link:",
+      message: `Order placed sucessfully. Payment link: ${preference.body.init_point}`,
       content: preference,
     });
 
@@ -117,6 +117,7 @@ export const mercadoPagoNotifications = async (req, res) => {
           where: { id: order.id},
           data: {
             status: order.status,
+            mpMerchantOrderId: order.mpMerchantOrderId.toString(), 
           },
         })
   
