@@ -1,22 +1,7 @@
 import { Router } from "express";
-import { 
-  getUsers, 
-  postUser, 
-  validateUser,
-  changePassword,
-  login,
-  profile,
-} from "../controllers/users.controllers.js";
-import { validateToken } from "../utils/tokenvalidator.js";
+import { createUser, login } from "../controllers/users.controllers.js";
 
-export const usersRouter = Router()
+export const userRouter = Router();
 
-usersRouter
-  .route("/users")
-  .get(getUsers)
-  .post(postUser)
-
-usersRouter.post("/validate-user", validateUser);
-usersRouter.post("/change-password", changePassword);
-usersRouter.post("/login", login);
-usersRouter.get("/profile", validateToken, profile);
+userRouter.post("/registro", createUser);
+userRouter.post("/login", login);

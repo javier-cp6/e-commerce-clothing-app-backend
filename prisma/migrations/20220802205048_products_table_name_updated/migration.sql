@@ -5,7 +5,7 @@
 
 */
 -- DropTable
-DROP TABLE `product`;
+DROP TABLE `Product`;
 
 -- CreateTable
 CREATE TABLE `products` (

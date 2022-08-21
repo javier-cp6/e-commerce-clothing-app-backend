@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+
+  db:
+    hostname: db_Tecsup
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ecommerceTecsup
+    ports:
+      - 3306:3306
+
+  adminer:
+    build: cod_dwf_clothing_app_backend-main/.
+    volumes:
+        - cod_dwf_clothing_app_backend-main:/usr/src/app
+    ports:
+      - 3000:8080
+    depends_on:
+      - db
