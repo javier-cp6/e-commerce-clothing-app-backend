@@ -54,8 +54,7 @@ export const placeOrder = async (req, res) => {
         // },
       },
       items: orderItems,
-      notification_url:
-        "https://aadd-2001-1388-13a7-cd3d-2d21-4f2f-ec24-f730.sa.ngrok.io/mercado-pago-notifications", 
+      notification_url: process.env.MP_NOTIFICATION_URL, 
     });
 
     // Empty cart
