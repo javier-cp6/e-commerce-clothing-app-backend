@@ -13,10 +13,11 @@ services:
     ports:
       - 3306:3306
 
-  adminer:
+  clothing_app:
     build: cod_dwf_clothing_app_backend-main/.
     volumes:
-        - cod_dwf_clothing_app_backend-main:/usr/src/app
+        - ./cod_dwf_clothing_app_backend-main/src:/usr/src/app/src
+        - ./cod_dwf_clothing_app_backend-main/prisma:/usr/src/app/prisma
     ports:
       - 3000:8080
     depends_on:
