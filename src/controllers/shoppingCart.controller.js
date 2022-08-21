@@ -19,7 +19,8 @@ export const createShoppingCart = async (req, res) => {
         data: {
           details:{
             create: {
-              productId: dataProduct.productId
+              productId: dataProduct.productId,
+              quantity: dataProduct.quantity
             }
           }
         }
@@ -35,7 +36,8 @@ export const createShoppingCart = async (req, res) => {
           user_id: user.user_id,
           details:{
             create:{
-              productId: dataProduct.productId
+              productId: dataProduct.productId,
+              quantity: dataProduct.quantity
             }
           }
         }
