@@ -3,7 +3,6 @@ import { cartRequestDTO } from "../dtos/carts.dtos.js";
 
 export const postItem = async (req, res) => {
   try {
-    // const data = req.body;
     const data = cartRequestDTO(req.body);
 
     const { user }  = req;
