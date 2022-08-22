@@ -56,7 +56,7 @@ export const placeOrder = async (req, res) => {
         },
         phone: {
           area_code: process.env.MP_TEST_USER_AREA_CODE,
-          number: process.env.MP_TEST_USER_PHONE,
+          number: +process.env.MP_TEST_USER_PHONE,
         },
       },
       items: orderItems,
