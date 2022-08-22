@@ -23,14 +23,17 @@ export const placeOrder = async (req, res) => {
           where: {prod_id: cartItem.productId }
         })
         return {
-          id: product.prod_id,
+          // id: product.prod_id,
+          id: +process.env.MP_TEST_PROD_ID,
           title: product.prod_name,
           picture_url: product.prod_img,
           currency_id: "USD",
           unit_price: +product.prod_price,
-          quantity: cartItem.quantity,
+          // quantity: cartItem.quantity,
+          quantity:1,
           size: cartItem.size,
-          color: cartItem.color
+          color: cartItem.color,
+          description: "Dispositivo móvil de Tienda e-commerce", 
         }
       })
     )
@@ -40,21 +43,31 @@ export const placeOrder = async (req, res) => {
       back_urls: {
         success: "https://cod-dwf-custom-clothing-app.vercel.app",
         failure: "https://cod-dwf-custom-clothing-app.vercel.app/cart",
-        pending: "https://cod-dwf-custom-clothing-app.vercel.app",
+        pending: "https://cod-dwf-custom-clothing-app.vercel.app/favs",
       },
       payer: {
         name: user.name,
         surname: user.lastname,
-        email: "test_user_63274575@testuser.com",
-        // TODO add address
-        // address: {
-        //   street_name: user.direcciones[0]?.calle,
-        //   street_number: +user.direcciones[0]?.numero,
-        //   zip_code: "04002",
-        // },
+        email: process.env.MP_TEST_USER_EMAIL,
+        address: {
+          street_name: process.env.MP_TEST_USER_STREET,
+          street_number: +process.env.MP_TEST_USER_ST_NUMBER,
+          zip_code: process.env.MP_TEST_USER_ZIPCODE,
+        },
+        phone: {
+          area_code: process.env.MP_TEST_USER_AREA_CODE,
+          number: process.env.MP_TEST_USER_PHONE,
+        },
       },
       items: orderItems,
       notification_url: process.env.MP_NOTIFICATION_URL, 
+      external_reference: "javiercastillopena@gmail.com",
+      payment_methods: {
+        excluded_payment_methods: [
+          { "id": "visa" }
+        ],
+        installments: 6
+      },
     });
 
     // Empty cart
