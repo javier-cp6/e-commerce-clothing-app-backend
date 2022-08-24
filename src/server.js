@@ -8,7 +8,7 @@ import { cartsRouter } from './routes/carts.routes.js';
 import { ordersRouter } from './routes/orders.routes.js';
 
 mercadopago.configure({
-  access_token: process.env.MP_ACCESS_TOKEN,
+  access_token: process.env.MP_SELLER_USER_ACCESS_TOKEN,
   integrator_id: process.env.MP_INTEGRATOR_ID
 })
 

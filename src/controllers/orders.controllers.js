@@ -45,7 +45,7 @@ export const placeOrder = async (req, res) => {
       payer: {
         name: user.name,
         surname: user.lastname,
-        email: "test_user_63274575@testuser.com",
+        // email: process.env.MP_PAYER_USER_EMAIL,
         // TODO add address
         // address: {
         //   street_name: user.direcciones[0]?.calle,
@@ -94,22 +94,22 @@ export const mercadoPagoNotifications = async (req, res) => {
   try {
     if (req.query.topic && req.query.topic === "merchant_order") {
       const { id } = req.query;
-      const merchant_order = await mercadopago.merchant_orders.get(id);
+      const { body: merchant_order } = await mercadopago.merchant_orders.get(id);
 
       const order = await PrismaConnector.order.findFirst({
-        where: { mpPreferenceId: merchant_order.body.preference_id}
+        where: { mpPreferenceId: merchant_order.preference_id}
       })
 
       if (order) {
-        order.mpMerchantOrderId = merchant_order.body.id;
-        const payment = merchant_order.body.payments[0];
-        if (payment && payment.status === "approved") {
+        order.mpMerchantOrderId = merchant_order.id.toString();
+        const payment = merchant_order.payments.slice(-1)[0];
+        if (payment && payment.status === "approved" && merchant_order.order_status === "paid") {
           order.status = "PAID";
         }
-        if (payment && payment.status === "pending") {
+        if (payment && payment.status === "pending" && merchant_order.order_status === "payment_required") {
           order.status = "PENDING";
         }
-        if (payment && payment.status === "rejected") {
+        if (payment && payment.status === "rejected" && merchant_order.order_status === "payment_required") {
           order.status = "FAILED";
         }
 
@@ -117,14 +117,14 @@ export const mercadoPagoNotifications = async (req, res) => {
           where: { id: order.id},
           data: {
             status: order.status,
-            mpMerchantOrderId: order.mpMerchantOrderId.toString(), 
+            mpMerchantOrderId: order.mpMerchantOrderId, 
           },
         })
   
       } else {
         // TODO send email to admin
         console.log(
-          `Order with preference id ${merchant_order.body.preference_id} was not found in DB`
+          `Order with preference id ${merchant_order.preference_id} was not found in DB`
         );
       }
     }
